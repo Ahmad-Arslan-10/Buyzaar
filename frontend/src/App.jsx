@@ -9,10 +9,12 @@ import Cart from './pages/Cart'
 import Orders from './pages/Orders'
 import PlaceOrder from './pages/PlaceOrder'
 import Login from './pages/Login'
+import NavBar from './components/Navbar'
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+    <NavBar/>
     <Routes>
       <Route path='/' element={<Home/>} />
         <Route path='/collection' element={<Collection/>} />
